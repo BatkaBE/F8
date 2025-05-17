@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-
-export default function BaatarGamePage() {
+import React from 'react';
+export default function UnhruushGamePage() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
@@ -17,11 +17,11 @@ export default function BaatarGamePage() {
     <div style={{ height: '100vh', overflow: 'hidden' }}>
       <iframe
         ref={iframeRef}
-        src="/game/baatar/index.html"
+        src="/game/unhruush/index.html"
         width="100%"
         height="100%"
         style={{ border: 'none' }}
-        title="Баатар тоглоом"
+        title="Өнхрүүш тоглоом"
         allow="camera *; microphone *"
       />
     </div>

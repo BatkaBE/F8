@@ -164,9 +164,11 @@ function monitorCollision() {
 const LEFT_BUFFER = 50;
 function isCollision() {
     const playerClientRect = playerElement.getBoundingClientRect();
-    const playerL = playerClientRect.left;
-    const playerR = playerClientRect.right;
-    const playerB = playerClientRect.bottom;
+    // Hitbox-ыг багасгах
+    const hitboxPadding = 30;
+    const playerL = playerClientRect.left + hitboxPadding;
+    const playerR = playerClientRect.right - hitboxPadding;
+    const playerB = playerClientRect.bottom - hitboxPadding;
     
     const obstacleClientRect = obstacleElement.getBoundingClientRect();
     const obstacleL = obstacleClientRect.left;

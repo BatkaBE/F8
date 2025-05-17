@@ -29,7 +29,13 @@ const GameCard: React.FC<GameCardProps> = ({ title, image, rating, onClick }) =>
       <img
         src={image}
         alt={title}
-        style={{ width: "100%", height: "120px", borderRadius: "5px", objectFit: "cover" }}
+        style={{ 
+          width: "100%", 
+          height: "120px", 
+          borderRadius: "5px", 
+          objectFit: "cover",
+          background: "#f3f3f3" // set background color for image area
+        }}
       />
       <p style={{ marginTop: "10px", fontWeight: "bold" }}>{title}</p>
       <div>

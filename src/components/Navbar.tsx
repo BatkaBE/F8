@@ -6,7 +6,7 @@ const Navbar = () => {
   const router = useRouter()
 
   return (
-<div
+    <div
       style={{
         display: "flex",
         alignItems: "center",
@@ -18,39 +18,12 @@ const Navbar = () => {
       }}
     >
       {/* Зүүн талын Logo + F8 */}
-      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+      <div 
+        style={{ display: "flex", alignItems: "center", gap: "10px", cursor: "pointer" }}
+        onClick={() => router.push("/")}
+      >
         <img src="/assets/f8-icon.png" alt="F8" style={{ height: "30px" }} />
         <span style={{ fontWeight: "bold", fontSize: "18px" }}>F8</span>
-      </div>
-
-      {/* Хайлтын хэсэг */}
-      <div style={{ position: "relative", flex: 1, maxWidth: "500px", margin: "0 20px" }}>
-        <input
-          type="text"
-          placeholder="Хайлт хийх"
-          style={{
-            width: "100%",
-            padding: "10px 40px 10px 15px",
-            borderRadius: "20px",
-            border: "1px solid #444",
-            backgroundColor: "#111",
-            color: "#fff",
-          }}
-        />
-        <button
-          style={{
-            position: "absolute",
-            right: "10px",
-            top: "50%",
-            transform: "translateY(-50%)",
-            background: "none",
-            border: "none",
-            color: "#ccc",
-            cursor: "pointer",
-          }}
-        >
-          ✕
-        </button>
       </div>
 
       {/* Нэвтрэх товч */}
