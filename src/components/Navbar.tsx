@@ -22,8 +22,8 @@ const Navbar = () => {
         style={{ display: "flex", alignItems: "center", gap: "10px", cursor: "pointer" }}
         onClick={() => router.push("/")}
       >
-        <img src="/assets/f8-icon.png" alt="F8" style={{ height: "30px" }} />
-        <span style={{ fontWeight: "bold", fontSize: "18px" }}>F8</span>
+        <img src="/assets/logo.png" alt="F8" style={{ height: "60px" }} />
+      
       </div>
 
       {/* Нэвтрэх товч */}

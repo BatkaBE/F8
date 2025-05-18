@@ -2,7 +2,7 @@ const playerElement = document.querySelector('.player');
 const obstacleElement = document.querySelector('.obstacle');
 const scoreElement = document.querySelector('.score-card .score');
 const highScoreElement = document.querySelector('.score-card .high-score');
-const restartGameElement = document.querySelector('.restart-game');
+const restartGameElement = document.querySelector('.start-game');
 const gameContainerElement = document.querySelector('.game-container');
 const cameraFeedbackElement = document.querySelector('#cameraFeedback');
 const toggleMouthBtn = document.querySelector('#toggleMouthDetection');
@@ -236,7 +236,7 @@ function stopGame() {
     stopVideoStream();
 }
 
-function restart() {
+function startGame() {
     location.reload();
 }
 

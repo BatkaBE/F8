@@ -9,44 +9,25 @@
     margin: 20px auto;
     border: 1px solid;
     position: fixed;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     overflow: hidden;
-    background: none !important;
+    background-image: url('./../../assets/Background.png');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    animation: bg-move 120s linear infinite; /* Илүү өргөн тул хугацааг сунгасан */
 }
 
-.game-bg-strip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3000px; /* 3 зураг x 2, тус бүр 1000px */
-    height: 100%;
-    display: flex;
-    z-index: 0;
-    animation: bg-strip-move 30s linear infinite;
-}
-
-.bg-img {
-    width: 1000px;
-    height: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-@keyframes bg-strip-move {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-1500px); }
-}
 
 @keyframes bg-move {
     0% {
-        background-position: 100%;
+        background-position-x: 0;
     }
     100% {
-        background-position: -50%;
+        background-position-x: -14400px; /* Шинэ зурган урт */
     }
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -127,7 +108,7 @@ align-items: end;
     margin-right: 20px;
 }
 
-.restart-game {
+.start-game {
     visibility: hidden;
     font-family: Minecraft;
     background-color: #ffffffb8;
@@ -143,15 +124,15 @@ align-items: end;
     z-index: 2;
 }
 
-.restart-game.show {
+.start-game.show {
     visibility: visible;
 }
 
-.restart-game .content {
+.start-game .content {
     display: flex;
 }
 
-.restart-game .btn-reset-game {
+.start-game .btn-reset-game {
     border: none;
     display: inline-block;
     width: 50px;
@@ -162,7 +143,7 @@ align-items: end;
     cursor: pointer;
 }
 
-.restart-game .text {
+.start-game .text {
     align-self: end;
 }
 

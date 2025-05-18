@@ -50,20 +50,8 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="/" class="nav-link">Нүүр</a>
-        <a href="/game" class="nav-link">Бусад тоглоомууд</a>
-        <a href="javascript:history.back()" class="nav-link">Буцах</a>
-    </nav>
+
     <div class="game-container">
-        <div class="game-bg-strip">
-            <img src="./../../assets/background1.png" class="bg-img" />
-            <img src="./../../assets/background2.png" class="bg-img" />
-            <img src="./../../assets/background3.png" class="bg-img" />
-            <img src="./../../assets/background1.png" class="bg-img" />
-            <img src="./../../assets/background2.png" class="bg-img" />
-            <img src="./../../assets/background3.png" class="bg-img" />
-        </div>
         <div class="score-card">
             <span>HI</span>
             <span class="high-score"></span>
@@ -71,10 +59,10 @@
         </div>
         <div class="player"></div>
         <div class="obstacle"></div>
-        <div class="restart-game">
+        <div class="start-game">
             <div class="content">
-                <span class="text">RESTART</span>
-                <button onclick="restart()" class="btn-reset-game"></button>
+                <span class="text">START</span>
+                <button onclick="startGame()" class="btn-start-game"></button>
             </div>
         </div>
         <button id="toggleMouthDetection" onclick="toggleMouthDetection()">Enable Mouth Control</button>
